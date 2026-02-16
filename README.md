@@ -1,6 +1,6 @@
-# SkillSprint - AI Career Roadmap Builder for Students
+FutureCraft
 
-SkillSprint is a full-stack AI web application that generates personalized student career roadmaps.
+FutureCraftis a full-stack  web application that generates personalized student career roadmaps.
 
 ## Tech Stack
 
