@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillSprint | Your AI Roadmap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="bg-pattern"></div>
+
+    <main class="container">
+      <section class="card fade-in">
+        <div class="section-header">
+          <h1>Your Personalized Career Roadmap</h1>
+          <a href="./dashboard.html" class="text-link">Build New Roadmap</a>
+        </div>
+        <p id="studentSummary" class="subtext"></p>
+        <p id="roadmapNotice" class="info-banner hidden"></p>
+
+        <div class="progress-tracker" aria-label="Roadmap progress tracker">
+          <div class="progress-step active">1. Profile Added</div>
+          <div class="progress-step active">2. AI Plan Generated</div>
+          <div class="progress-step active">3. Start Sprinting</div>
+        </div>
+
+        <div id="roadmapGrid" class="roadmap-grid"></div>
+
+        <div class="action-row">
+          <button id="downloadPdfBtn" class="btn btn-secondary">Download as PDF</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+    <script src="./js/roadmap.js?v=2"></script>
+  </body>
+</html>

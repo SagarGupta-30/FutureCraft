@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillSprint | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./client/css/styles.css" />
+  </head>
+  <body>
+    <div class="bg-pattern"></div>
+
+    <main class="container">
+      <section class="card fade-in">
+        <div class="section-header">
+          <h1>Student Dashboard</h1>
+          <a href="./index.html" class="text-link">Back to Home</a>
+        </div>
+        <p class="subtext">Fill in your details to generate a personalized AI career roadmap.</p>
+
+        <form id="roadmapForm" class="form-grid" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="branch">Branch</label>
+            <select id="branch" name="branch" required>
+              <option value="">Select Branch</option>
+              <option value="Computer Science">Computer Science</option>
+              <option value="Information Technology">Information Technology</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Mechanical">Mechanical</option>
+              <option value="Civil">Civil</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="year">Year</label>
+            <select id="year" name="year" required>
+              <option value="">Select Year</option>
+              <option value="1st Year">1st Year</option>
+              <option value="2nd Year">2nd Year</option>
+              <option value="3rd Year">3rd Year</option>
+              <option value="4th Year">4th Year</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="targetRole">Target Role</label>
+            <select id="targetRole" name="targetRole" required>
+              <option value="">Select Role</option>
+              <option value="Software Engineer">Software Engineer</option>
+              <option value="Data Scientist">Data Scientist</option>
+              <option value="AI/ML Engineer">AI/ML Engineer</option>
+              <option value="Product Manager">Product Manager</option>
+              <option value="Cybersecurity Engineer">Cybersecurity Engineer</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="targetCompany">Target Company</label>
+            <input
+              type="text"
+              id="targetCompany"
+              name="targetCompany"
+              placeholder="Google, Microsoft, Startup, etc"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="currentSkills">Current Skills (comma separated)</label>
+            <input
+              type="text"
+              id="currentSkills"
+              name="currentSkills"
+              placeholder="JavaScript, Python, SQL"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="experienceLevel">Experience Level</label>
+            <select id="experienceLevel" name="experienceLevel" required>
+              <option value="">Select Level</option>
+              <option value="Beginner">Beginner</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Advanced">Advanced</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <button type="submit" class="btn btn-primary" id="generateBtn">
+              Generate My AI Roadmap
+            </button>
+          </div>
+
+          <p id="formError" class="error-text full-width"></p>
+        </form>
+      </section>
+    </main>
+
+    <div id="loadingOverlay" class="loading-overlay hidden" aria-live="polite">
+      <div class="loader-card">
+        <div class="spinner"></div>
+        <p>Generating your roadmap...</p>
+      </div>
+    </div>
+
+    <script src="./client/js/app.js?v=2"></script>
+  </body>
+</html>

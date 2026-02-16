@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Build outputs (if any)
+dist/
+build/
+coverage/
+
+# Temporary files
+.tmp/
+tmp/
