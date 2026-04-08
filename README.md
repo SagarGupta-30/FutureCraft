@@ -10,7 +10,7 @@ FutureCraftis a full-stack  web application that generates personalized student 
 
 ## Project Structure
 
-```
+```''''''
 .
 ├── client/
 │   ├── css/
