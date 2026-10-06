@@ -5,7 +5,7 @@ FutureCraftis a full-stack  web application that generates personalized student 
 ## Tech Stack
 
 - Frontend: HTML, CSS, Vanilla JavaScript
-- Backend: Node.js, Express.js
+- Backend: Node.js, Express.js..........
 - AI: OpenAI API
 
 ## Project Structure
